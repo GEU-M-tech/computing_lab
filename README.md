@@ -20,3 +20,24 @@
         insaurance_data_generator.py
         land_price_data_generator.py
 ```
+
+## Usage
+- Ensure Python & Git are installed locally
+```bash
+git clone https://github.com/GEU-M-tech/computing_lab
+cd computing_lab
+```
+
+- You may run the data generators before running scripts
+
+## Data Generators
+```bash
+cd ./utils
+python land_price_data_generator.py
+```
+
+## Running Scripts
+```bash
+cd ../
+cd ./scripts
+python linear_regression_land.py
