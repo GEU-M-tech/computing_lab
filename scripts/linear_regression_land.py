@@ -10,13 +10,11 @@ land_data = pd.DataFrame(data)
 X = land_data[['area']]
 y = land_data['price']
 
-
 model = LinearRegression()
 model.fit(X, y)
 
 
 y_pred = model.predict(X)
-
 
 mse = root_mean_squared_error(y, y_pred)
 r2 = r2_score(y, y_pred)

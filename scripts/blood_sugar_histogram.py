@@ -9,7 +9,6 @@ bld_labels = ['50-69', '70-89', '90-109', '110-129', '130-149']
 
 data['Blood Sugar Range'] = pd.cut(data['bld'], bins=bld_bins, labels=bld_labels)
 
-
 males = data[data['gender'] == 'Male']
 females = data[data['gender'] == 'Female']
 
@@ -20,7 +19,6 @@ plt.figure(figsize=(10, 6))
 
 bar_width = 0.4
 positions = range(len(bld_labels))
-
 
 plt.bar([p - bar_width/2 for p in positions], male_counts, width=bar_width, alpha=0.7, label='Males', color='blue', edgecolor='black')
 plt.bar([p + bar_width/2 for p in positions], female_counts, width=bar_width, alpha=0.7, label='Females', color='red', edgecolor='black')

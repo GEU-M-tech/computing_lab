@@ -12,10 +12,13 @@ y = data['price']
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 lin_reg = LinearRegression()
+
 lin_reg.fit(X_train, y_train)
 y_pred = lin_reg.predict(X_test)
+
 mse = root_mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
