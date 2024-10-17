@@ -3,20 +3,22 @@
 ## Repo Structure:
 
 ```bash
-│   
 ├───data
 │       blood_sugar_data.csv
 │       home_price_data.csv
+│       houses_data.csv
 │       insurance_data.csv
 │       
 ├───scripts
 │       blood_sugar_histogram.py
 │       linear_regression_land.py
 │       logistic_regression.py
+│       multi_regression.py
 │       weather_info.py
-│       
+│
 └───utils
         blood_sugar_data_generator.py
+        home_price_data_generator.py
         insaurance_data_generator.py
         land_price_data_generator.py
 ```
@@ -26,6 +28,10 @@
 ```bash
 git clone https://github.com/GEU-M-tech/computing_lab
 cd computing_lab
+```
+- Run the following command to install required packages
+```bash
+pip install -r .\requirement.txt
 ```
 
 - You may run the data generators before running scripts
