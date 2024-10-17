@@ -31,7 +31,7 @@ cd computing_lab
 ```
 - Run the following command to install required packages
 ```bash
-pip install -r .\requirement.txt
+pip install -r requirement.txt
 ```
 
 - You may run the data generators before running scripts
