@@ -47,3 +47,11 @@ python land_price_data_generator.py
 cd ../
 cd ./scripts
 python linear_regression_land.py
+```
+
+- Matplot graphs might not be visible on linux enviroment. Use this to resolve
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install PyQt6
+```
